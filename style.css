@@ -19,4 +19,20 @@ video{width:100%;border-radius:12px;background:#000}.shots{display:grid;grid-tem
 .team{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .team li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}.team span{display:block;color:var(--muted);font-size:15px}
 .posts article{border-left:3px solid var(--acc);padding:4px 0 4px 16px;margin:0 0 24px}.posts time{color:var(--muted);font-size:14px}
+.dex{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.dexcard{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.dexart{position:relative;aspect-ratio:1;background:radial-gradient(circle at 50% 40%,#232836,#14171d)}
+.dexart .ill{width:100%;height:100%;object-fit:contain;display:block}.dexart .px{image-rendering:pixelated;padding:18%}
+.dexart .spr{position:absolute;right:8px;bottom:8px;width:64px;height:64px;image-rendering:pixelated;background:rgba(15,17,21,.85);
+border:1px solid var(--line);border-radius:8px;padding:4px}
+.dexcard figcaption{padding:10px 12px 12px;color:var(--ink)}.dexcard .num{color:var(--acc);font-weight:700;margin-right:8px;font-variant-numeric:tabular-nums}
+.dexcard .el{float:right;color:var(--muted);font-size:13px;text-transform:capitalize}.dexcard p{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.45}
+.dexcard.spoiler{position:relative}.reveal{position:absolute;opacity:0;pointer-events:none}
+.spoiler .dexart img{visibility:hidden}.spoiler .real{display:none}.spoiler .mask{color:var(--muted)}.spoiler .hide{display:none}
+.eye{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;color:var(--muted);
+background:repeating-linear-gradient(135deg,rgba(255,255,255,.02) 0 12px,transparent 12px 24px)}.eye:hover{color:var(--acc)}.eye span{font-size:13px}
+.reveal:focus-visible+.dexart .eye{outline:2px solid var(--acc);outline-offset:-4px}
+.reveal:checked+.dexart img{visibility:visible}.reveal:checked+.dexart .eye{display:none}
+.reveal:checked~figcaption .real{display:block}.reveal:checked~figcaption b.real{display:inline}.reveal:checked~figcaption .mask{display:none}
+.reveal:checked~figcaption .hide{display:inline-block;margin-top:6px;font-size:13px;color:var(--acc);cursor:pointer}
 footer{max-width:1040px;margin:0 auto;padding:24px 20px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
