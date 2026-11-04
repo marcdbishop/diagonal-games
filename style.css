@@ -26,7 +26,7 @@ video{width:100%;border-radius:12px;background:#000}.shots{display:grid;grid-tem
 .dexart .spr{position:absolute;right:8px;bottom:8px;width:64px;height:64px;image-rendering:pixelated;background:rgba(15,17,21,.85);
 border:1px solid var(--line);border-radius:8px;padding:4px}
 .dexcard figcaption{padding:10px 12px 12px;color:var(--ink)}.dexcard .num{color:var(--acc);font-weight:700;margin-right:8px;font-variant-numeric:tabular-nums}
-.dexcard .el{float:right;color:var(--muted);font-size:13px;text-transform:capitalize}.dexcard p{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.45}
+.dexcard .el{float:right;color:var(--muted);font-size:13px}.dexcard p{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.45}
 .dexcard.spoiler{position:relative}.reveal{position:absolute;opacity:0;pointer-events:none}
 .spoiler .dexart img{visibility:hidden}.spoiler .real{display:none}.spoiler .mask{color:var(--muted)}.spoiler .hide{display:none}
 .eye{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;color:var(--muted);
